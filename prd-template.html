@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech PRD Template | Timileyin Abdulsalam</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+  table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+th, td { border: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; font-size: 0.875rem; }
+th { background: #f9fafb; font-weight: 600; }
+.example td { color: #6b7280; font-style: italic; }
+</style>
+  </head>
+  <body class="bg-gray-100">
+  <div class="container mx-auto p-8 max-w-4xl">
+  <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+  <p class="text-sm text-gray-500 mb-2"><a href="index.html" class="text-blue-600 hover:underline">&larr; Back to portfolio</a></p>
+  <h1 class="text-3xl font-bold">Product Requirements Document</h1>
+<p class="text-gray-600 mt-1">[Product or Feature Name]</p>
+<p class="text-gray-500 text-sm mt-3">Template by Timileyin Abdulsalam · Product Manager, Payments &amp; Fintech · <a href="index.html" class="text-blue-600 hover:underline">timi4real1.github.io</a></p>
+  <p class="text-gray-500 text-sm italic mt-4">How to use this template: text in [brackets] is a placeholder. Grey italic rows are worked examples drawn from a sanitized virtual account product; replace them with your own content. Delete the italic guidance notes before circulating.</p>
+<p class="text-sm mt-4"><a href="mailto:salamitimileyin2@gmail.com?subject=PRD%20template%20(Word%20version)" class="text-blue-600 hover:underline font-semibold">Email me for the editable Word version</a></p>
+  </div>
+  <div class="bg-white rounded-2xl shadow p-6 mb-6">
+  <h2 class="text-xl font-bold mb-2">Document Control</h2>
+  <table>
+  <tr><th>Version</th><th>Date</th><th>Author</th><th>Summary of changes</th></tr>
+<tr><td>0.1</td><td>[date]</td><td>[name]</td><td>First draft for internal review</td></tr>
+<tr><td>1.0</td><td>[date]</td><td>[name]</td><td>Approved for build after stakeholder sign-off</td></tr>
+  </table>
+  <table class="mt-4">
+  <tr><th class="w-1/3">Field</th><th>Value</th></tr>
+  <tr><td>Status</td><td>[Draft / In review / Approved / In build]</td></tr>
+  <tr><td>Product owner</td><td>[name]</td></tr>
+  <tr><td>Stakeholders</td><td>[Engineering lead, Design, Compliance, Operations, Business owner]</td></tr>
+  <tr><td>Target release</td><td>[quarter or date]</td></tr>
+  </table>
+  </div>
+  <div class="bg-white rounded-2xl shadow p-6 mb-6">
+  <h2 class="text-xl font-bold mb-2">1. Background &amp; Context</h2>
+  <p class="text-gray-500 text-sm italic mb-2">Two or three paragraphs. Where does this product sit in the business? What exists today? Why now?</p>
+  <p class="text-gray-700">[Describe the current state, the business context, and the trigger for this initiative.]</p>
+  <p class="text-gray-500 italic mt-2 text-sm">Example: The bank currently issues static virtual accounts through a legacy service with no expiry control. Partners have requested dynamic accounts with configurable time-to-live so they can reconcile one-off collections without manual matching.</p>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">2. Problem Statement</h2>
+<p class="text-gray-500 text-sm italic mb-2">One sharp paragraph. Whose problem, what problem, what it costs them today. If you cannot write this section clearly, the product is not ready to spec.</p>
+<p class="text-gray-700">[User group] cannot [job to be done] because [constraint]. Today this costs them [time, money, or risk].</p>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">3. Goals &amp; Success Metrics</h2>
+<p class="text-gray-500 text-sm italic mb-2">Every goal needs a measurable target and a data source. If it cannot be measured from the platform, it is a wish, not a goal.</p>
+<table>
+<tr><th>Goal</th><th>Metric</th><th>Target</th><th>Source</th></tr>
+<tr><td>[Business goal]</td><td>[Measurable indicator]</td><td>[Number]</td><td>[Dashboard / SQL]</td></tr>
+<tr class="example"><td>Reduce reconciliation effort for partners</td><td>% of collections auto-matched</td><td>95%</td><td>Settlement DB</td></tr>
+</table>
+<h3 class="font-semibold mt-4">Non-goals</h3>
+<p class="text-gray-500 text-sm italic mb-1">What this release deliberately does not do. This is the strongest defence against scope creep.</p>
+<ul class="list-disc list-inside text-gray-700"><li>[Out-of-scope item and one line on why]</li></ul>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">4. Users &amp; Actors</h2>
+<table>
+<tr><th>Actor</th><th>Description</th><th>Key need</th></tr>
+<tr><td>[Actor]</td><td>[Who they are]</td><td>[What they need from this product]</td></tr>
+<tr class="example"><td>Partner developer</td><td>Integrates the API on behalf of a fintech</td><td>Clear specs, predictable errors, fast certification</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">5. User Stories &amp; Acceptance Criteria</h2>
+<p class="text-gray-500 text-sm italic mb-2">Story format: As a [actor], I want [capability], so that [outcome]. Acceptance criteria are testable statements; QA writes cases directly from them.</p>
+<table>
+<tr><th>ID</th><th>User story</th><th>Acceptance criteria</th></tr>
+<tr><td>US-01</td><td>[As a ..., I want ..., so that ...]</td><td>[Given / when / then statements]</td></tr>
+<tr class="example"><td>US-02</td><td>As a partner developer, I want to set an expiry when creating a dynamic virtual account, so that unused accounts close automatically.</td><td>Given a valid request with expiry_minutes between 5 and 1440, when the account is created, then it rejects payments after expiry and emits an account.expired webhook.</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">6. Functional Requirements</h2>
+<p class="text-gray-500 text-sm italic mb-2">Numbered, prioritised with MoSCoW. Each requirement is one testable behaviour, not a paragraph of intentions.</p>
+<table>
+<tr><th>ID</th><th>Requirement</th><th>Priority</th><th>Story</th></tr>
+<tr><td>FR-01</td><td>[The system shall ...]</td><td>Must</td><td>US-01</td></tr>
+<tr class="example"><td>FR-02</td><td>The system shall generate a unique NUBAN within 2 seconds of a valid create request.</td><td>Must</td><td>US-02</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">7. User Flows</h2>
+<p class="text-gray-500 text-sm italic mb-2">Insert flow diagrams here (happy path plus the two most important failure paths). One diagram per core journey. Tools: Figma, Whimsical, or draw.io.</p>
+<p class="text-gray-700">[Flow 1: e.g. Account creation and payment happy path]</p>
+<p class="text-gray-700">[Flow 2: e.g. Payment after expiry - rejection and webhook]</p>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">8. API Specification</h2>
+<p class="text-gray-500 text-sm italic mb-2">The contract engineering builds from and partners integrate against. Full request/response samples live in the Postman collection; this section holds the summary table and rules.</p>
+<table>
+<tr><th>Method</th><th>Endpoint</th><th>Purpose</th><th>Auth</th></tr>
+<tr><td>[VERB]</td><td>[/path]</td><td>[What it does]</td><td>[Scheme]</td></tr>
+<tr class="example"><td>POST</td><td>/v1/virtual-accounts</td><td>Create static or dynamic virtual account</td><td>OAuth 2.0</td></tr>
+</table>
+<h3 class="font-semibold mt-4">Error handling</h3>
+<ul class="list-disc list-inside text-gray-700"><li>[Error model: codes, structure, retry guidance. Example: all errors return a machine-readable code, a human message, and a reference ID.]</li></ul>
+<h3 class="font-semibold mt-4">Webhooks &amp; events</h3>
+<ul class="list-disc list-inside text-gray-700"><li>[Event name, trigger, payload summary, retry policy]</li></ul>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">9. Non-Functional Requirements</h2>
+<table>
+<tr><th class="w-1/4">Category</th><th>Requirement</th></tr>
+<tr><td>Performance</td><td>[e.g. P95 latency under 500ms at 100 TPS]</td></tr>
+<tr><td>Availability</td><td>[e.g. 99.9% monthly uptime; degradation plan]</td></tr>
+<tr><td>Security</td><td>[e.g. encryption at rest and in transit, key rotation, least privilege]</td></tr>
+<tr><td>Compliance</td><td>[e.g. CBN guidelines, NDPR data residency, KYC tier limits]</td></tr>
+<tr><td>Auditability</td><td>[e.g. every state change logged with actor and timestamp]</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">10. Dependencies &amp; Assumptions</h2>
+<ul class="list-disc list-inside text-gray-700">
+<li>[Dependency: system, team, or third party this build relies on]</li>
+<li>[Assumption: what we are treating as true; flag the risk if it is not]</li>
+</ul>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">11. Rollout Plan</h2>
+<table>
+<tr><th>Phase</th><th>Scope</th><th>Exit criteria</th></tr>
+<tr><td>UAT</td><td>[Internal testing scope]</td><td>[e.g. zero Sev-1 defects]</td></tr>
+<tr><td>Pilot</td><td>[Limited partners or volume]</td><td>[e.g. 2 partners certified, error rate under 0.5%]</td></tr>
+<tr><td>GA</td><td>[Full availability]</td><td>[e.g. monitoring and support runbook live]</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">12. Risks &amp; Mitigations</h2>
+<table>
+<tr><th>Risk</th><th>Likelihood</th><th>Impact</th><th>Mitigation</th></tr>
+<tr><td>[What could go wrong]</td><td>[H/M/L]</td><td>[H/M/L]</td><td>[What we do about it]</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">13. Open Questions</h2>
+<table>
+<tr><th>#</th><th>Question</th><th>Owner</th><th>Due</th></tr>
+<tr><td>1</td><td>[Unresolved decision blocking build]</td><td>[name]</td><td>[date]</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6 mb-6">
+<h2 class="text-xl font-bold mb-2">Appendix: Glossary</h2>
+<p class="text-gray-500 text-sm italic mb-2">Define every acronym once. Partners and new joiners read this first.</p>
+<table>
+<tr><th class="w-1/4">Term</th><th>Definition</th></tr>
+<tr><td>[Term]</td><td>[Plain-language definition]</td></tr>
+<tr class="example"><td>NUBAN</td><td>Nigeria Uniform Bank Account Number, the 10-digit standard account format.</td></tr>
+</table>
+</div>
+<div class="bg-white rounded-2xl shadow p-6">
+<p class="text-gray-700">Built from the PRDs I write at a CBN-licensed payment service bank, sanitised for public sharing. If you need a PRD, an API specification, or product discovery for a fintech build, <a href="mailto:salamitimileyin2@gmail.com" class="text-blue-600 hover:underline font-semibold">email me</a> or reach me on <a href="https://wa.me/2349033612309" class="text-blue-600 hover:underline font-semibold">WhatsApp</a>.</p>
+</div>
+</div>
+</body>
+</html>
